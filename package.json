@@ -1,0 +1,15 @@
+{
+  "name": "plus-one",
+  "version": "0.1.0",
+  "description": "Your plus-one for anything on the web: watch together with your own AI companion.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "butler": "node butler/main.js"
+  }
+}

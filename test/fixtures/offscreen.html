@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>屏幕外还有一条</title>
+<!-- 跟抖音一样：下一条视频在屏幕外预加载、也在播，而且比眼前这条还大。芯得认眼前这条 -->
+<body style="margin:0;background:#000;overflow:hidden">
+<video id="next" src="clip.webm" muted autoplay loop playsinline style="position:absolute;left:3000px;top:0;width:900px;height:500px"></video>
+<video id="here" src="clip.webm" muted autoplay loop playsinline style="position:absolute;left:20px;top:20px;width:480px;height:270px"></video>
+</body>

@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>清定时器的页面</title>
+<!-- 跟抖音一样：一加载就把页面上的定时器全清掉。芯得靠视频事件找到视频 -->
+<script>for (let i = 0; i < 20000; i++) clearInterval(i);</script>
+<body style="margin:0;background:#000">
+<video id="paused" src="clip.webm" muted preload="auto" width="640" height="360"></video>
+<video id="v" src="clip.webm" muted playsinline width="640" height="360"></video>
+<script>
+  for (let i = 0; i < 20000; i++) clearInterval(i);
+  setTimeout(() => { for (let i = 0; i < 20000; i++) clearInterval(i); document.getElementById("v").play(); }, 1500);
+</script>
+</body>

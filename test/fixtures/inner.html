@@ -1,0 +1,8 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- 跟 YouTube 一样开着 Trusted Types：芯要是往页面里塞 HTML 字符串，这里就会炸 -->
+<meta http-equiv="Content-Security-Policy" content="require-trusted-types-for 'script'">
+<title>内层（跨域框）</title>
+<body style="margin:0;background:#000">
+<video id="v" src="clip.webm" muted autoplay loop playsinline width="640" height="360"></video>
+</body>
